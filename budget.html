@@ -8,92 +8,94 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">Zorion ◉</div>
-      <ul class="nav-links">
-        <li><a href="index.html">AI Chat</a></li>
-        <li><a href="budget.html" class="active">Budget Planner</a></li>
-        <li><a href="goals.html">Goals & Retirement</a></li>
-        <li><a href="interest.html">Interest Calc</a></li>
-      </ul>
-    </nav>
+      <nav class="navbar">
+        <div class="logo">Zorion ◉</div>
+        <ul class="nav-links">
+          <li><a href="index.html">AI Chat</a></li>
+          <li><a href="budget.html" class="active">Budget Planner</a></li>
+          <li><a href="goals.html">Goals & Retirement</a></li>
+          <li><a href="interest.html">Interest Calc</a></li>
+        </ul>
+      </nav>
 
-    <div class="container">
-      <h1>Smart Budget Distribution</h1>
-      <p>
-        Enter your monthly income, adjust your priorities, and visualize your
-        spending.
-      </p>
-
-      <!-- START: Financial Facts -->
-      <p style="font-size: 0.95rem; color: #fff">
-        💡 According to
-        <a
-          href="https://www.fidelity.com/learning-center/personal-finance/microsavings?"
-          target="_blank"
-          ;
-          style="color: #ffd700"
-          >Fidelity:</a
-        >
-        “Small savings can lead to big wins — consistency is key. Automate tiny
-        transfers to reach short‑term goals painlessly.”
-      </p>
-      <!-- END: Financial Facts -->
-
-      <div class="input-group">
-        <label for="income">Your Monthly Income ($)</label>
-        <input type="number" id="income" placeholder="e.g. 3000" />
-      </div>
-
-      <canvas id="budgetChart" width="400" height="400"></canvas>
-
-      <div class="budget-inputs">
-        <div class="input-group">
-          <label for="invest">Investment (%)</label>
-          <input type="number" id="invest" value="20" min="0" max="100" />
-        </div>
-        <div class="input-group">
-          <label for="education">Education (%)</label>
-          <input type="number" id="education" value="5" min="0" max="100" />
-        </div>
-        <div class="input-group">
-          <label for="entertainment">Entertainment (%)</label>
-          <input
-            type="number"
-            id="entertainment"
-            value="10"
-            min="0"
-            max="100"
-          />
-        </div>
-        <div class="input-group">
-          <label for="food">Food & Drink (%)</label>
-          <input type="number" id="food" value="15" min="0" max="100" />
-        </div>
-        <div class="input-group">
-          <label for="living">Living (%)</label>
-          <input type="number" id="living" value="50" min="0" max="100" />
-        </div>
-        <button id="autoDistribute">Auto Adjust</button>
-        <button id="updateChart">Update Chart</button>
-      </div>
-
-      <div id="total-spending" class="spending-output">
-        <p style="font-size: 0.9em; ">
-          * The allocation ratio is based on recommendations from financial
-          experts at
-          <a
-            href="https://www.fidelity.com/viewpoints/personal-finance/spending-and-saving"
-            target="_blank"
-            >Fidelity Investments</a
-          >, with slight adjustments made to suit personal needs.
+      <div class="container">
+        <h1>Smart Budget Distribution</h1>
+        <p>
+          Enter your monthly income, adjust your priorities, and visualize your
+          spending.
         </p>
-      </div>
-    </div>
 
-    <footer>
-      <p>&copy; 2025 Zorion. All rights reserved.</p>
-    </footer>
+        <!-- START: Financial Facts -->
+        <p style="font-size: 0.95rem; color: #fff">
+          💡 According to
+          <a
+            href="https://www.fidelity.com/learning-center/personal-finance/microsavings?"
+            target="_blank"
+            ;
+            style="color: #ffd700"
+            >Fidelity:</a
+          >
+          “Small savings can lead to big wins — consistency is key. Automate
+          tiny transfers to reach short‑term goals painlessly.”
+        </p>
+        <!-- END: Financial Facts -->
+
+        <div class="input-group">
+          <label for="income">Your Monthly Income ($)</label>
+          <input type="number" id="income" placeholder="e.g. 3000" />
+        </div>
+
+        <canvas id="budgetChart" width="400" height="400"></canvas>
+
+        <div class="budget-inputs">
+          <div class="input-group">
+            <label for="invest">Investment (%)</label>
+            <input type="number" id="invest" value="20" min="0" max="100" />
+          </div>
+          <div class="input-group">
+            <label for="education">Education (%)</label>
+            <input type="number" id="education" value="5" min="0" max="100" />
+          </div>
+          <div class="input-group">
+            <label for="entertainment">Entertainment (%)</label>
+            <input
+              type="number"
+              id="entertainment"
+              value="10"
+              min="0"
+              max="100"
+            />
+          </div>
+          <div class="input-group">
+            <label for="food">Food & Drink (%)</label>
+            <input type="number" id="food" value="15" min="0" max="100" />
+          </div>
+          <div class="input-group">
+            <label for="living">Living (%)</label>
+            <input type="number" id="living" value="50" min="0" max="100" />
+          </div>
+          <div class="input-group">
+            <label aria-hidden="true">&nbsp;</label>
+            <button id="autoDistribute">Auto Adjust</button>
+          </div>
+          <div class="input-group">
+            <label aria-hidden="true">&nbsp;</label>
+            <button id="updateChart">Update Chart</button>
+          </div>
+        </div>
+
+        <div id="total-spending" class="spending-output">
+          <p style="font-size: 0.9em">
+            * The allocation ratio is based on recommendations from financial
+            experts at
+            <a
+              href="https://www.fidelity.com/viewpoints/personal-finance/spending-and-saving"
+              target="_blank"
+              >Fidelity Investments</a
+            >, with slight adjustments made to suit personal needs.
+          </p>
+        </div>
+      </div>
 
     <script src="js/budget.js"></script>
   </body>

@@ -25,11 +25,11 @@ let chart = new Chart(ctx, {
       {
         data: [20, 5, 10, 15, 50],
         backgroundColor: [
-          "#FFD700", // Vàng tươi
-          "#FFC300", // Vàng chanh sáng
-          "#FFB000", // Vàng cam rực
-          "#FFA500", // Cam nhạt (vàng đậm)
-          "#FFF200", // Vàng chanh nhạt
+          "#D6EAF8", // Xanh pastel rất nhạt
+          "#2471A3", // Xanh đậm hơn (Steel Blue)
+          "#2980B9", // Xanh biển đậm
+          "#5DADE2", // Xanh dương nhạt hơn
+          "#3498DB", // Xanh dương chuẩn
         ],
       },
     ],
@@ -118,3 +118,4 @@ function updateChart() {
 // Gắn sự kiện nút
 autoBtn.addEventListener("click", autoDistribute);
 updateBtn.addEventListener("click", updateChart);
+
