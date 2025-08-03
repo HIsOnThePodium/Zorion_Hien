@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interest Calculator | Zorion</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Zorion ◉</div>
+        <ul class="nav-links">
+          <li><a href="index.html">AI Chat </a></li>
+          <li><a href="budget.html">Budget Planner</a></li>
+          <li><a href="goals.html">Goals & Retirement</a></li>
+          <li><a href="interest.html" class="active">Interest Calc</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      
+        <h1>Bank Interest Calculator</h1>
+        <p>Calculate future value based on your savings and interest rate.</p>
+        <p style="font-size: 0.95rem; color: #555">
+          📚 A
+          <a
+            href="https://gflec.org/initiatives/pisa-financial-literacy/"
+            target="_blank" 
+            >global study by GFLEC & OECD</a
+          >
+          found that fewer than <strong>30%</strong> of youth worldwide can
+          accurately explain how compound interest works — highlighting a key
+          gap in financial education.
+        </p>
+      <section class="interest-section">
+        <label for="principal">Principal Amount ($):</label>
+        <input type="number" id="principal" placeholder="e.g. 10000" />
+
+        <label for="rate">Interest Rate (Annual %):</label>
+        <input type="number" id="rate" placeholder="e.g. 5" />
+
+        <label for="years">Number of Years:</label>
+        <input type="number" id="years" placeholder="e.g. 10" />
+
+        <button id="calculateInterest">Calculate</button>
+        <p id="interestResult"></p>
+      </section>
+
+      <section class="comparison-section">
+        <h2>Compare Different Interest Rates</h2>
+        <p>See how different rates affect your savings over time.</p>
+
+        <label for="comparePrincipal">Principal ($):</label>
+        <input type="number" id="comparePrincipal" placeholder="e.g. 10000" />
+
+        <label for="compareYears">Years:</label>
+        <input type="number" id="compareYears" placeholder="e.g. 10" />
+
+        <label for="rates">Rates to Compare (comma separated, %):</label>
+        <input type="text" id="rates" placeholder="e.g. 2,4,6" />
+
+        <button id="compareRates">Compare</button>
+        <ul id="compareResult"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Zorion. Empowering Your Financial Decisions.</p>
+    </footer>
+
+    <script src="js/interest.js"></script>
+  </body>
+</html>

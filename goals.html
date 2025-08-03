@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zorion – Savings Goals & Retirement</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Zorion ◉</div>
+        <ul class="nav-links">
+          <li><a href="index.html">AI Chat</a></li>
+          <li><a href="budget.html">Budget Planner</a></li>
+          <li><a href="goals.html" class="active">Goals & Retirement</a></li>
+          <li><a href="interest.html">Interest Calc</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Plan Your Savings & Retirement</h1>
+      <p>Define your savings goals and get a retirement timeline.</p>
+
+      <p style="font-size: 0.95rem; color: #555">
+        💡 According to the
+        <a
+          href="https://www.oecd.org/finance/financial-education/oecdifefinancialliteracyframework.htm"
+          target="_blank"
+          >OECD</a
+        >, many adults across member countries lack basic financial literacy,
+        with less than <strong>40%</strong> being able to plan effectively for
+        long-term savings or retirement.
+      </p>
+
+      <div class="goal-section">
+        <h2>Savings Goal</h2>
+        <label for="goalAmount">Target Amount ($)</label>
+        <input type="number" id="goalAmount" placeholder="e.g. 10,000" />
+
+        <label for="monthlySavings">Monthly Contribution ($)</label>
+        <input type="number" id="monthlySavings" placeholder="e.g. 300" />
+
+        <button id="calculateGoal">Calculate Time Needed</button>
+        <p id="goalResult"></p>
+      </div>
+
+      <hr />
+
+      <div class="retirement-section">
+        <h2>Retirement Plan</h2>
+        <label for="currentAge">Your Current Age</label>
+        <input type="number" id="currentAge" placeholder="e.g. 25" />
+
+        <label for="retireAge">Planned Retirement Age</label>
+        <input type="number" id="retireAge" placeholder="e.g. 60" />
+
+        <label for="monthlyRetireSavings">Monthly Retirement Saving ($)</label>
+        <input type="number" id="monthlyRetireSavings" placeholder="e.g. 400" />
+
+        <button id="calculateRetirement">Estimate Retirement Fund</button>
+        <p id="retireResult"></p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Zorion © 2025 | All rights reserved</p>
+    </footer>
+
+    <script src="js/goals.js"></script>
+  </body>
+</html>
