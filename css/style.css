@@ -16,13 +16,13 @@ body {
   font-family: "Abula", sans-serif !important;
   margin: 0;
   padding: 0;
-  background-color: #f9fbfc;
-  color: #333;
+  background-color: #111;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
-  color: #0056b3;
+  color: #ffd700;
 }
 .container {
   max-width: 1000px;
@@ -37,14 +37,14 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #000;
   padding: 16px 32px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.08); /* đổ bóng sáng nhẹ */
 }
 .logo {
   font-size: 20px;
   font-weight: bold;
-  color: #008080;
+  color: #ffd700; /* vàng tươi */
 }
 .nav-links {
   list-style: none;
@@ -54,10 +54,11 @@ a {
 .nav-links li a {
   font-weight: 500;
   padding-bottom: 4px;
+  color: #f0f0f0;
 }
 .nav-links li a.active,
 .nav-links li a:hover {
-  border-bottom: 2px solid #008080;
+  border-bottom: 2px solid #ffd700;
 }
 
 /* =============================
@@ -81,7 +82,6 @@ a {
    CHAT SECTION (index.html)
 ============================= */
 .chat-section {
-  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -95,7 +95,7 @@ a {
   border: 1px solid #eee;
   border-radius: 6px;
   margin-bottom: 15px;
-  background: #fefefe;
+  background: #4d4b4b;
 }
 #chat-form {
   display: flex;
@@ -111,14 +111,14 @@ a {
 #chat-form button {
   padding: 10px 20px;
   border: none;
-  background-color: #008080;
+  background-color: #0077b6;
   color: white;
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
 }
 #chat-form button:hover {
-  background-color: #006666;
+  background-color: #144272;
 }
 
 /* =============================
@@ -156,23 +156,20 @@ footer {
   max-width: 900px;
   margin: 80px auto;
   padding: 30px;
-  background-color: #ffffff;
+  background-color: #000;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .container h1 {
   text-align: center;
-  font-size: 2rem;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .container p {
   text-align: center;
-  font-size: 1rem;
   margin-bottom: 40px;
-  color: #666;
+  color: #fff;
 }
 
 canvas#budgetChart {
@@ -180,6 +177,9 @@ canvas#budgetChart {
   margin: 0 auto 40px auto;
   max-width: 100%;
   height: auto;
+}
+#budgetChart {
+  color: #fff;
 }
 
 .budget-inputs {
@@ -192,12 +192,11 @@ canvas#budgetChart {
 .input-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .input-group label {
-  font-weight: 500;
-  color: #333;
+  color: #fff;
 }
 
 .input-group input {
@@ -233,10 +232,10 @@ canvas#budgetChart {
 #total-spending {
   margin-top: 30px;
   font-size: 1rem;
-  color: #444;
-  background: #f0f8ff;
+  color: #fff;
+  background: #444;
   padding: 16px;
-  border-left: 4px solid #0066cc;
+  border-left: 4px solid #1a1a1a;
   border-radius: 8px;
   line-height: 1.6;
 }
@@ -261,20 +260,10 @@ canvas#budgetChart {
 /* ====== saving.html ========= */
 /* ============================= */
 
-.goal-section,
-.retirement-section {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  margin-top: 30px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
 .goal-section h2,
 .retirement-section h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #1b4965;
 }
 
 .goal-section label,
@@ -292,6 +281,12 @@ canvas#budgetChart {
   border: 1px solid #d3d3d3;
   border-radius: 8px;
   font-size: 1rem;
+  box-sizing: border-box;
+}
+.goal-section input:focus,
+.retirement-section input:focus {
+  outline: none;
+  border-color: #111;
 }
 
 #calculateGoal,
@@ -342,15 +337,14 @@ canvas#budgetChart {
 .comparison-section p {
   font-size: 1rem;
   margin-bottom: 18px;
-  color: #444;
+  color: #fff;
 }
 
 .interest-section label,
 .comparison-section label {
   display: block;
   margin-bottom: 6px;
-  font-weight: 600;
-  color: #333;
+  color: #fff;
 }
 
 .interest-section input,
@@ -362,17 +356,18 @@ canvas#budgetChart {
   border-radius: 10px;
   font-size: 1rem;
   transition: border-color 0.2s;
+  box-sizing: border-box;
 }
 
 .interest-section input:focus,
 .comparison-section input:focus {
   outline: none;
-  border-color: #205295;
+  border-color: #111;
 }
 
 #calculateInterest,
 #compareRates {
-  background-color: #205295;
+  background-color: #0077b6;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -409,4 +404,45 @@ select,
 textarea {
   font-family: "Abula", sans-serif !important;
   font-weight: 300 !important;
+}
+
+.chat-section,
+.goal-section,
+.retirement-section,
+.interest-section,
+.comparison-section {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 215, 0, 0.2); /* viền ánh vàng */
+  box-shadow: 0 8px 32px 0 rgba(255, 215, 0, 0.25); /* bóng ánh vàng */
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+}
+
+.container h1,
+.container p,
+.goal-section h2,
+.retirement-section h2,
+.interest-section h2,
+.comparison-section h2,
+.interest-section p,
+.comparison-section p,
+label {
+  color: #eee; /* trắng xám nhẹ */
+}
+input,
+textarea,
+select {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+button {
+  background-color: #ffd700;
+  color: #000;
+}
+
+button:hover {
+  background-color: #e6c200;
 }

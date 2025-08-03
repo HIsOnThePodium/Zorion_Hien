@@ -25,11 +25,11 @@ let chart = new Chart(ctx, {
       {
         data: [20, 5, 10, 15, 50],
         backgroundColor: [
-          "#1e3a8a", // deep blue
-          "#2563eb", // vibrant blue
-          "#3b82f6", // soft blue
-          "#60a5fa", // sky blue
-          "#93c5fd", // light blue
+          "#FFD700", // Vàng tươi
+          "#FFC300", // Vàng chanh sáng
+          "#FFB000", // Vàng cam rực
+          "#FFA500", // Cam nhạt (vàng đậm)
+          "#FFF200", // Vàng chanh nhạt
         ],
       },
     ],
